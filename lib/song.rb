@@ -47,7 +47,8 @@ class Song
     #separate the file_name string into artist and song title.
     file_info = []
     file_info = file_name.split(" - ")
-    file_info[0]
+    self.new_by_name(file_info[0])
+    
     # file_info << file_name.split(" - ").collect do|info|
     #     if info.delete_suffix(".mp3")==nil ? info : info
     #   end

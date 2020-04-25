@@ -57,7 +57,6 @@ class Song
     song.artist_name = artist_name
     song.name = song_name
     song
-    end
     # file_info << file_name.split(" - ").collect do|info|
     #     if info.delete_suffix(".mp3")==nil ? info : info
     #   end

@@ -48,7 +48,7 @@ class Song
     file_info = []
     file_info = file_name.split(" - ")
     self.new_by_name(file_info[0])
-    
+
     # file_info << file_name.split(" - ").collect do|info|
     #     if info.delete_suffix(".mp3")==nil ? info : info
     #   end

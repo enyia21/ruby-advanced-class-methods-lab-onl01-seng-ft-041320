@@ -1,3 +1,4 @@
+require "pry"
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -51,8 +52,8 @@ class Song
     artist_name = ""
     song_name = file_info[1].delete_suffix(".mp3")
     artist_name = file_info[0]
-    self.new_by_name(song_name).artist_name = artist_name
-    self
+    binding.pry
+    
     # file_info << file_name.split(" - ").collect do|info|
     #     if info.delete_suffix(".mp3")==nil ? info : info
     #   end

@@ -40,6 +40,14 @@ class Song
     end
   end
   def self.alphabetical
-    self.all.sort_by{|song| song.name}
+    self.all.sort_by{|song| song.name} #a song is passed in and the array is sorted with the sort by name call.  
+  end
+
+  def self.new_from_filename(file_name)
+    #separate the file_name string into artist and song title. 
+    file_info = []
+    file_info = file_name.split(" - ").collect{|info| if info.delete_suffix(".mp3")==nil ? info : info}
+    self.new_by_name(file_info[1])
+    self.artist_name = file_info[0]
   end
 end

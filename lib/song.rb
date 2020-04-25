@@ -19,7 +19,7 @@ class Song
   def self.new_by_name(name)
     song = self.new # creating a new instance of a song
     song.name = name # assigning the song a name by calling the getter function for name and writing the variable name to it
-    self.all << song
-    song
+    self.all << song # shoveling a new song into the all array
+    song #I'm returing a song with the name attribute changed.
   end
 end

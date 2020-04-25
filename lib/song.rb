@@ -15,4 +15,11 @@ class Song
     self.all << song
     song #returns the instance of the initalized and saved song
   end
+
+  def self.new_by_name(name)
+    song = self.new # creating a new instance of a song
+    song.name = name # assigning the song a name by calling the getter function for name and writing the variable name to it
+    self.all << song
+    song
+  end
 end

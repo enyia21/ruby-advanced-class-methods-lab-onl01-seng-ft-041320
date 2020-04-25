@@ -27,7 +27,7 @@ class Song
     self.all << song # shoveling a new song into the all array
     song
   end
-  
+
   def self.find_by_name(song_name)
     self.all.find{|song| song.name == song_name}
   end

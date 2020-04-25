@@ -53,7 +53,7 @@ class Song
     song_name = file_info[1].delete_suffix(".mp3")
     artist_name = file_info[0]
     binding.pry
-    
+
     # file_info << file_name.split(" - ").collect do|info|
     #     if info.delete_suffix(".mp3")==nil ? info : info
     #   end

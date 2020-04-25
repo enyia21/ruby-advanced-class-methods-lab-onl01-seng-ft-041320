@@ -12,6 +12,6 @@ class Song
 
   def self.create
     @@all<< self.new # initializes a new song
-    self.all #returns teh instance of the initalized and saved song 
+    self.all #returns teh instance of the initalized and saved song
   end
 end

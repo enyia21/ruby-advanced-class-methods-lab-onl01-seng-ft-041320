@@ -23,7 +23,7 @@ class Song
   end
 
   def song.create_by_name(song_name)
-    
+
     # self.all << song # shoveling a new song into the all array
-  
+
 end

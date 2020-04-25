@@ -25,7 +25,7 @@ class Song
   def song.create_by_name(song_name)
     self.new_by_name(song_name)
     self.all << self # shoveling a new song into the all array
-    song
+    self
   end
 
 end

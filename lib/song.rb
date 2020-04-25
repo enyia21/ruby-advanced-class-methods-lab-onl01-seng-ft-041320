@@ -22,10 +22,10 @@ class Song
     song #I'm returing a song with the name attribute changed.
   end
 
-  def song.create_by_name(song_name)
-    self.new_by_name(song_name)
-    self.all << self # shoveling a new song into the all array
-    self
+  def self.create_by_name(song_name)
+    song = self.new_by_name(song_name)
+    self.all << song # shoveling a new song into the all array
+    song
   end
 
 end
